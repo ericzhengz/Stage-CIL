@@ -328,7 +328,7 @@ class SimpleClipNet(BaseNet):
         pass
 
 
-class Proof_Net(SimpleClipNet):
+class STAGE_Net(SimpleClipNet):
     def __init__(self, args, pretrained):
         super().__init__(args, pretrained)
         self.projs_img = nn.ModuleList()
